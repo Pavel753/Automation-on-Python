@@ -1,0 +1,15 @@
+{
+  "pet": {
+    "id": 3413,
+    "name": "Tosha",
+    "type": "dog",
+    "age": 50,
+    "gender": "male",
+    "owner_id": 431,
+    "pic": "https://www.googleapis.com/download/storage/v1/b/petsforkate/o/e52f9cf5-151a-4a75-9d0a-d9015860cef0?generation=1670350157931650&alt=media",
+    "owner_name": "test@21.by",
+    "likes_count": 1,
+    "liked_by_user": null
+  },
+  "comments": []
+}

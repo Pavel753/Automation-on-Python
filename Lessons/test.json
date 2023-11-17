@@ -1,0 +1,21 @@
+{
+    "firstname": "Катя",
+    "lastname": "Артемьева",
+    "isAlive": true,
+     "age": 25,
+     "address": {
+         "streetAddress": "Независимости, 62",
+         "city": "Минск"
+
+     },
+     "phoneNumbers": [
+         {
+            "type": "mob",
+             "number": "+375292222222"
+        },
+         {
+             "type": "office",
+             "number": null
+         }
+     ]
+ }
