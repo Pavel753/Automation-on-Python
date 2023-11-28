@@ -1,3 +1,5 @@
+from collections import deque
+
 # Минское метро
 MinskSubway = {"КАМЕННАЯ ГОРКА":
                    ["КУНЦАЎШЧЫНА"],
@@ -94,4 +96,27 @@ MinskSubway = {"КАМЕННАЯ ГОРКА":
                "МАЛІНАЎКА":
                    ["ПЯТРОЎШЧЫНА"]}
 
-# def find_shortest_path(start, end):
+
+# Функция поиска маршрута
+def find_shortest_path(graph, start, end):
+    # Инициализация очереди для BFS
+    queue = deque()
+    queue.append((start, [start]))
+
+    # Пока очередь не пуста
+    while queue:
+        current_station, path = queue.popleft()
+
+        # Проверка, достигли ли мы конечной станции
+        if current_station == end:
+            return path
+
+        # Если не достигли, добавляем соседние станции в очередь
+        for neighbor_station in graph.get(current_station, []):
+            if neighbor_station not in path:
+                queue.append((neighbor_station, path + [neighbor_station]))
+
+
+# Пример поиска маршрута
+path = find_shortest_path(MinskSubway, 'МАСКОЎСКАЯ', 'ПЛОШЧА ФРАНЦІШКА БАГУШЭВІЧА')
+print(path)

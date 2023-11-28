@@ -8,3 +8,9 @@ class Cat(Pet):
     def voise(self):
         voise = 'мяу'
         return voise
+
+
+class Dog(Pet):
+    def voise(self):
+        voise = 'гав'
+        return voise
