@@ -19,7 +19,7 @@ def add_2(number):
     print(number ** 2)
 
 
-add_2(3)  # 9
+add_2(3)  # 10
 add_2(5)
 
 
