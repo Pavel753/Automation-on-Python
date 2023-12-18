@@ -8,9 +8,9 @@ driver.get('https://www.google.com/')
 
 time.sleep(5)
 
-serch_box = driver.find_element(By.NAME, 'q')
-serch_box.send_keys('QaLearning')
-serch_box.submit()
+search_box = driver.find_element(By.NAME, 'q')
+search_box.send_keys('QaLearning')
+search_box.submit()
 
 time.sleep(5)
 
